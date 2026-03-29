@@ -22,6 +22,17 @@ It detects potholes in road images/videos and highlights them with bounding boxe
 * YOLO (Ultralytics)
 * OpenCV
 
+## 📊 Model Performance
+
+| Metric       | Value |
+| ------------ | ----- |
+| Precision    | 0.80  |
+| Recall       | 0.88  |
+| mAP@0.5      | 0.88  |
+| mAP@0.5:0.95 | 0.69  |
+| F1 Score     | 0.84  |
+
+The model demonstrates strong performance in detecting potholes with high recall and balanced precision.
 
 ---
 
