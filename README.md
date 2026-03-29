@@ -1,26 +1,35 @@
+Your README is already solid 👍 — I’ll refine it into a **clean, professional GitHub-ready version** with better structure, clarity, and links properly embedded.
+
+---
+
 # 🛣️ Pothole Detection using YOLO
 
 ## 📌 Overview
 
 This project demonstrates **pothole detection using a trained YOLO model**.
-It detects potholes in road images/videos and highlights them with bounding boxes and confidence scores.
+It identifies potholes in road images and videos, drawing bounding boxes along with confidence scores.
+
+The system is designed to work in **real-world road conditions**, making it useful for smart transportation and road safety applications.
 
 ---
 
 ## 🚀 Features
 
-* Detects potholes in images and videos
-* Uses trained YOLO model (`best.pt`)
-* Displays bounding boxes with confidence scores
-* Works in real-world road conditions
+* Detects potholes in **images and videos**
+* Uses a trained YOLO model (`best.pt`)
+* Displays **bounding boxes with confidence scores**
+* Handles **multiple potholes in a single frame**
+* Works in **real-world scenarios**
 
 ---
 
 ## 🧠 Tech Stack
 
-* Python
-* YOLO (Ultralytics)
-* OpenCV
+* **Python**
+* **YOLO (Ultralytics)**
+* **OpenCV**
+
+---
 
 ## 📊 Model Performance
 
@@ -32,7 +41,19 @@ It detects potholes in road images/videos and highlights them with bounding boxe
 | mAP@0.5:0.95 | 0.69  |
 | F1 Score     | 0.84  |
 
-The model demonstrates strong performance in detecting potholes with high recall and balanced precision.
+The model achieves **high recall (0.88)**, meaning it successfully detects most potholes, while maintaining a good balance with precision.
+
+---
+
+## 🎥 Results
+
+### 📥 Input Video
+
+👉 [Click to View Input Video](https://drive.google.com/file/d/1-ClzcldjV30NuBKYQXtmmIOIW5O-JRFS/view?usp=sharing)
+
+### 📤 Output Video (Detection)
+
+👉 [Click to View Output Video](https://drive.google.com/file/d/1LB5yWtyz-Ny8rperV2Io8Jl9xo2H8vmq/view?usp=sharing)
 
 ---
 
@@ -46,30 +67,28 @@ python detect.py
 
 ---
 
-## 📊 Model Performance
+## 📦 Model File
 
-The model performs well in detecting potholes under different road conditions.
-
-* Detects multiple potholes in a single frame
-* Handles real-world scenarios
-* Some low-confidence detections may occur
-
-*Note: Exact metrics (Precision, Recall, mAP, F1-score) require evaluation on a labeled validation dataset.*
+* `best.pt` → Trained YOLO weights used for detection
 
 ---
 
-## 📦 Model File
+## ⚙️ How It Works
 
-* `best.pt` → trained YOLO weights used for detection
+1. Input image/video is passed to the YOLO model
+2. Model predicts pothole locations
+3. Bounding boxes are drawn with confidence scores
+4. Output video/image is generated
 
 ---
 
 ## 🎯 Future Improvements
 
-* Improve accuracy with larger dataset
-* Remove low-confidence detections using threshold tuning
-* Add real-time video detection
-* Deploy as web/mobile application
+* Improve accuracy with a **larger and more diverse dataset**
+* Apply **confidence threshold tuning** to reduce false detections
+* Implement **real-time detection (live camera)**
+* Deploy as a **web or mobile application**
+* Add **GPS tagging for pothole mapping**
 
 ---
 
@@ -78,8 +97,12 @@ The model performs well in detecting potholes under different road conditions.
 **Abhishek Agrawal**
 MBM University, Jodhpur
 
+🔗 GitHub: [https://github.com/Ab3229](https://github.com/Ab3229)
+
 ---
 
 ## ⭐ Support
 
-If you like this project, please ⭐ the repository!
+If you like this project, please ⭐ the repository and share it!
+
+
